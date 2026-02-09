@@ -1,0 +1,1475 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Itim&display=swap');
+
+:root{
+  --bg-color: #FDEEBB;
+  --font-color: #4D293B;
+  --bg-image: url("diamondbg.png");
+  --font-highlight: #BA2A63;
+  --header: #EBB9A3;
+  --status-bg: #fff6d9;
+  --link-hover: #FF489C;
+  --fen-scale-mult: 1;
+  --background-scale: auto;
+  --shadow-color: #00000051;
+  --animation-mult: 1;
+}
+
+html {
+	cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  text-shadow: 2px 2px 4px var(--shadow-color);
+  scrollbar-color: var(--font-highlight) var(--header);
+}
+
+@font-face{
+  font-family: "OpenDyslexic";
+  src: url("OpenDyslexic-Regular.otf");
+}
+@media (min-width: 800px) {
+body {
+  padding:1em;
+  padding-top:2em;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: var(--background-scale);
+  color: var(--font-color);
+	font-family: 'Arvo', sans-serif;
+	font-size: 1.4em;
+	background-attachment: fixed;
+  background-position: center;
+	line-height: 1.69;
+  margin-top: 1.3%;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:0em;
+  margin-bottom: 0;
+}
+.taskie {
+  filter: drop-shadow(-3px 5px 4px #00000080);
+}
+main {
+  padding:1em;
+  padding-top:1em;
+  margin-right: 22%;
+  margin-left: 22%;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:1.2em;
+  color: var(--font-color);
+  z-index: -1;
+  border-radius: 50px;
+}
+
+footer{
+  margin-top: 2em;
+  padding-top:auto;
+  padding-bottom:2em;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+}
+footer-text{
+  margin-top: 2em;
+  padding-top:2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.6em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  color: var(--font-highlight);
+}
+
+
+.footerGlunch{
+  position: fixed;
+  bottom: -15px;
+  left: 15px;
+  height: 69px;
+}
+
+.footerIcon{
+  padding:1%;
+}
+
+
+header {
+	padding-top: 10em;
+}
+
+
+/* unvisited link */
+a:link {
+  color: var(--font-highlight);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--font-highlight);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--link-hover);
+	text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* selected link */
+a:active {
+  color: white;
+	text-decoration: none;
+}
+
+a img.hover {
+  display: none;
+  vertical-align: sub;
+}
+a img.default {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.hover {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.default {
+  display: none;
+  vertical-align: sub;
+}
+
+.headbutton {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  font-size: 1.5em;
+  font-weight:bold;
+  cursor: pointer;
+  width:20%;
+}
+
+
+
+
+.writing h2{
+  font-family: 'Itim', sans-serif;
+  text-align: center;
+  color: var(--font-color);
+  font-size: 2.0em;
+}
+.writing{
+	text-indent: 20px;
+  text-align: justify;
+  background-color: #fff6d9;
+  color: #4D293B;
+  padding: 2.3em;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+
+
+
+::-moz-selection { /* Code for Firefox */
+  color: #FDEEBB;
+  background: #EE5990;
+}
+
+::selection {
+  color: #FDEEBB;
+  background: #EE5990;
+}
+
+h1{
+  font-family: 'Itim', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.logo{
+  width: 540px;
+  transform: scale(1);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.logo:hover{
+  transform: scale(1.06);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.statusUpdates{
+  background-color: var(--status-bg);
+  color: var(--font-color);
+  padding: 0.5em;
+  font-size: 1em;
+  width: 50%;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  positio;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+.statusHeader{
+  background-color: var(--header);
+
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BA2A63; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4D293B; 
+}
+
+hr.solid {
+  border-top: 2px solid var(--header);
+}
+
+
+.project{
+  background-color: var(--font-color);
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  height:300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.projectText{
+  color: var(--bg-color);
+  padding: 1em;
+  font-size: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  opacity: 0;
+  text-align: justify;
+
+}
+
+
+.project:hover .projectText {
+  visibility: visible;
+  opacity: 1;
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project-bg{
+  background-color: var(--font-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 218px;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project:hover .project-bg{
+  opacity: 0.1;
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project:hover{
+  background-color: var(--font-color);
+  color: #fff6d9;
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  height:300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  transition: calc(0.2s * var(--animation-mult));
+  transform: scale(1.05,1.05 );
+}
+
+
+.character{
+  position: absolute;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+.project-header{
+  background-color: var(--header);
+  color: var(--font-color);
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.project-title {
+  color: var(--font-color);
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-top: 1.25%;
+  margin-left: 40px;
+}
+
+.project-date {
+  color: var(--font-color);
+  font-size: 0.6em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+
+
+
+.gallery{
+
+  display: flex; 
+  flex-direction: row-reverse; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.gallery-image{
+  
+  
+}
+
+
+.row > .column {
+  display:block;
+}
+
+.row:after {
+  display:flex;
+  line-height: 0;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  display:block;
+  width: 1%;
+  line-height: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(12, 10, 24, 0.9);
+  z-index: 100;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 32px;
+  margin-top: -50px;
+  color: #FDEEBB;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0s ease;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 200;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  color: #FDEEBB;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0s;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+
+.hover-shadow:hover {
+  opacity: 0.7;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+img.hover-shadow-project {
+  transition: 0s;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.hover-shadow-project:hover {
+  opacity: 0.7;
+  
+}
+
+
+.galleryDisplay{
+  max-height: 75vh;
+  max-width: 82vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 9px 0px black; 
+  box-shadow: 5px 5px 9px 0px black;
+
+}
+
+
+.dyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.dyslexic .statusHeader{
+  background-color: var(--header);
+  color: #4D293B;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.dark .statusUpdates{
+  color: #fff6d9;
+  background-color: #2B1420;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 50%;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic h1{
+  font-family: 'OpenDyslexic', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+
+.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.9em;
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.67em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+.dyslexic .project-header{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* unvisited link */
+.dark a:link {
+  color: #FF2F75;
+  text-decoration: none;
+}
+
+/* visited link */
+.dark a:visited {
+  color: #FF2F75;
+	text-decoration: none;
+}
+
+/* mouse over link */
+.dark a:hover {
+  color: var(--link-hover);
+	text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+.dark   footer-text{
+  margin-top: 2em;
+  padding-top:2em;
+  font-size: 0.6em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  color: #FF2F75;;
+}
+
+
+
+.christmasLights{
+  position: fixed;
+  margin-top: -4%;
+  left: -2%;
+  background-size: 250px;
+  width: 110%;
+  height: 80px;
+  pointer-events: none
+}
+
+.fennel{
+  position: fixed;
+  bottom: 1%;
+  left: 5%;
+  width: calc(9% * var(--fen-scale-mult));
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  transition: 0.2s;
+  z-index: 20;
+}
+
+.fennel:hover{
+  transition: 0.2s;
+}
+
+.fennelPlatform{
+  position: fixed;
+  bottom: -2%;
+  left: -5%;
+  width: 20%;
+  display: none;
+}
+
+@keyframes squish {
+  0% {transform: scale(1,1);}
+  50% {transform: scale(1.06,1.06);}
+  100% {transform: scale(1,1);}
+}
+
+code{
+  font-size: 0.9em;
+}
+
+.codeBlock{
+  background-color: var(--status-bg);
+  color: var(--font-color);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  overflow-y: hidden;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: inset 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: inset 5px 5px 9px 0px var(--shadow-color);
+}
+
+.buttonsContainer{
+  margin-top: 2em;
+  margin-bottom: -2em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.project-title img {
+  position: absolute;
+  width: 35%;
+  top: -1em;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  z-index: 10;
+}
+
+.buttonsContainer img{
+  image-rendering: pixelated;
+  /*width: 176px;*/
+}
+
+.buttonsContainer img:hover{
+  transform: scale(1.1);
+}
+
+
+.socialsList{
+  margin: auto;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin-top: -0.8em;
+}
+
+
+
+
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+/* MOBILE CSS */
+@media (max-width: 1000px) {
+
+body {
+  padding:1em;
+  padding-top:1em;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  color: var(--font-color);
+	font-family: 'Arvo', sans-serif;
+	font-size: 0.9em;
+	background-attachment: fixed;
+  background-position: center;
+	line-height: 1.69;
+  margin-top: 1.3%;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:0em;
+  margin-bottom: 0;
+}
+  main {
+    padding:0em;
+    padding-top:0em;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  footer{
+    margin-top: 3em;
+    padding-top:auto;
+    padding-bottom:0;
+    font-size: 1.7em;
+    text-align: center;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  }
+
+  .footerGlunch{
+    float: right;
+    margin-right: 15px;
+  }
+
+  footer-text{
+    margin-top: 2em;
+    padding-top:2em;
+    font-size: 0.6em;
+    text-align: center;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
+    color: var(--font-highlight);
+  }
+  
+  .footerIcon{
+    padding:1%;
+  }
+  header {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+  
+  
+  /* unvisited link */
+  a:link {
+    color: var(--font-highlight);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--font-highlight);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+      cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a img.hover {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+  }
+  a img.default {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+  }
+  a:hover img.hover {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+  }
+  a:hover img.default {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+  }
+  
+  .headbutton {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    font-size: 0.95em;
+    font-weight:bold;
+    cursor: pointer;
+    display: inline-grid;
+    padding-bottom: 1em;
+  }
+
+  
+
+  .writing{
+    text-indent: 28px;
+    text-align: justify;
+    background-color: #fff6d9;
+    color: #4D293B;
+    padding: 1em;
+    font-size: 0.9em;
+    border-radius: 8px;
+  }
+
+  h1{
+    font-family: 'Itim', sans-serif;
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .logo{
+    width: 82%;
+    
+  
+  }
+
+  .statusUpdates{
+    background-color: var(--status-bg);
+    color: var(--font-color);
+    padding: 0.5em;
+    font-size: 1em;
+    width: 70%;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    border-radius: 0px 0px 20px 20px;
+    
+  }
+  .statusHeader{
+    background-color: var(--header);
+    color: var(--font-color);
+    padding: 0.5em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    width: 70%;
+    height:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Itim', sans-serif;
+    font-size: 1em;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #BA2A63; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4D293B; 
+  }
+  
+  hr.solid {
+    border-top: 2px solid #EBB9A3;
+  }
+  
+
+.project{
+  background-color: rgba(186, 42, 99, 0);
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  padding-bottom: 12em;
+}
+
+.projectText{
+  color: #fff6d9;
+  padding: 1em;
+  font-size: 0.9em;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: justify;
+  background-color: rgb(77, 41, 59);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+.project-bg{
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.project:hover{
+  color: #fff6d9;
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  padding-bottom: 12em;
+}
+
+.project-header{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  font-size: 1.8em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5em;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.project-title {
+  color: #4D293B;
+  font-size: 0.7em;
+  text-align: center;
+
+  text-size-adjust: 30%;
+}
+
+.project-date {
+  color: #4D293B;
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+
+
+
+.gallery{
+
+  display: flex; 
+  flex-direction: row-reverse; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.gallery-image{
+  
+  
+}
+
+
+.row > .column {
+  display:block;
+}
+
+.row:after {
+  display:flex;
+  line-height: 0;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  display:block;
+  width: 1%;
+  line-height: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(12, 10, 24, 0.9);
+  z-index: 100;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  padding-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  position: absolute;
+  top: 82%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50%;
+  color: #FDEEBB;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0s ease;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  color: #FDEEBB;
+  z-index: 100;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0s;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.hover-shadow:hover {
+  opacity: 0.7;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+img.hover-shadow-project {
+  transition: 0s;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.hover-shadow-project:hover {
+  opacity: 0.7;
+  
+}
+
+
+.galleryDisplay{
+  max-height: 800px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+
+}
+
+.dyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.dyslexic .statusHeader{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 70%;
+  height:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.dark .statusUpdates{
+  color: #fff6d9;
+  background-color: #2B1420;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 70%;
+  height:100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 70%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 70%;
+  height:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+.dyslexic h1{
+  font-family: 'OpenDyslexic', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+
+.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.9em;
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.67em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+.dyslexic .project-header{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.5em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic .project-title {
+  color: #4D293B;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic .project-date {
+  color: #4D293B;
+  font-size: 0.4em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.4em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.christmasLights{
+  position: fixed;
+  margin-top: -8%;
+  left: -2%;
+  background-size: 170px;
+  width: 110%;
+  height: 50px;
+}
+
+.fennel{
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  width: calc(18% * var(--fen-scale-mult));
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  z-index: 20;
+}
+
+.fennelPlatform{
+  position: fixed;
+  bottom: -2%;
+  left: -5%;
+  width: 20%;
+  display: none;
+}
+
+.codeBlock{
+  background-color: var(--status-bg);
+  color: var(--font-color);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  overflow-y: hidden;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: inset 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: inset 5px 5px 9px 0px var(--shadow-color);
+}
+
+.buttonsContainer{
+  margin-top: 2em;
+  margin-bottom: -2em;
+}
+
+}

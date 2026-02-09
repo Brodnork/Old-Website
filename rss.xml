@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>Welcome to Bumble Bee City!</title>
+    <link>http://bumblebee.city/</link>
+    <description>Bee's personal website.</description>
+    <item>
+        <title>The blog's got comments now</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS7</guid>
+        <pubDate>Sun, 29 September 2024 00:00:00 GMT</pubDate>
+        <description>I have added comments to the blog!</description>
+    </item>
+    <item>
+        <title>More  updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS6</guid>
+        <pubDate>Mon, 23 September 2024 00:00:00 GMT</pubDate>
+        <description> Added a bunch of updates to the site including a Links page and a bunch of updates to the About page. I also redid a bunch of the code to make new pages easier to make and old pages easier to update.</description>
+    </item>
+    <item>
+        <title>More slight updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS5</guid>
+        <pubDate>Thu, 19 September 2024 00:00:00 GMT</pubDate>
+        <description>More updates to the visuals, mainly some simple animations. I'm also adding buttons to the About page.</description>
+    </item>
+    <item>
+        <title>Updated some visuals of the site</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS4</guid>
+        <pubDate>Mon, 16 September 2024 00:00:00 GMT</pubDate>
+        <description>Slight update to the visuals of the site, including the addition of a little interactive Fennel in the corner, as well as holiday themes.</description>
+    </item>
+    <item>
+        <title>God I keep forgetting RSS is a thing</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS3</guid>
+        <pubDate>Tue, 10 September 2024 00:00:00 GMT</pubDate>
+        <description>I totally forgot to update this thing in over a year oops. Check the Updates section on the home page for things you may have missed!</description>
+    </item>
+    <item>
+        <title>Site updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS1</guid>
+        <pubDate>Mon, 25 March 2024 00:00:00 GMT</pubDate>
+        <description>Updated the projects and art pages!</description>
+    </item>
+    <item>
+        <title>RSS feed is up!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS2</guid>
+        <pubDate>Sat, 29 April 2023 00:00:00 GMT</pubDate>
+        <description>The RSS feed is online now! More stuff coming soon.</description>
+    </item>
+    
+</channel>
+</rss>

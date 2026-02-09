@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "fdd917c809300700",
+    "type": "split",
+    "children": [
+      {
+        "id": "063086afb2ac3373",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30774178e707618c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "MAP.canvas",
+                "viewState": {
+                  "x": 122.82817047817048,
+                  "y": 19.230145530145535,
+                  "zoom": -1.231128352088495
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6dd5e3df55f62cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1330296a867fe05e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9960b983b361769",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a7351e2059e05d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d062e793ec36e60e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "632598b6db413df2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "be3033f1f7de84a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8fcc24020a9d41d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec0bb0a263f45537",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MAP.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "431ef6716e521aa5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MAP.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a086f3492ebb8c5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a182c2c42df2a682",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MAP.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "30774178e707618c",
+  "lastOpenFiles": [
+    "East - The Great Tangle.md",
+    "PUZZLE IDEAS.md",
+    "MAP.canvas",
+    "Large Shipwreck.md",
+    "Outpost.md",
+    "The Beach.md",
+    "Sprout City.md",
+    "Secret Under the City.md",
+    "Mountain Caves.md",
+    "Mountain Peak.md",
+    "North - Mt Curmudgeon.md",
+    "West - Gilder's Pass.md",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "2023-05-02.md"
+  ]
+}
